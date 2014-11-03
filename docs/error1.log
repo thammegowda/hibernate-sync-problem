@@ -1,0 +1,83 @@
+[main] INFO org.example.hibernate.util.HibernateUtil - Initialising hibernate...
+Nov 03, 2014 11:15:17 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+Nov 03, 2014 11:15:17 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.0.CR1}
+Nov 03, 2014 11:15:17 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Nov 03, 2014 11:15:17 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Nov 03, 2014 11:15:17 PM org.hibernate.cfg.Configuration configure
+INFO: HHH000044: Configuring from URL: file:/home/tg/work/datoin/oss/hibernate-session/target/classes/hibernate.xml
+Nov 03, 2014 11:15:17 PM org.hibernate.cfg.Configuration doConfigure
+INFO: HHH000041: Configured SessionFactory: null
+Nov 03, 2014 11:15:17 PM org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
+INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+Nov 03, 2014 11:15:17 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/hib_ex
+Nov 03, 2014 11:15:17 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH000046: Connection properties: {user=hibuser, password=****}
+Nov 03, 2014 11:15:17 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH000006: Autocommit mode: false
+Nov 03, 2014 11:15:17 PM com.mchange.v2.log.MLog <clinit>
+INFO: MLog clients using java 1.4+ standard logging.
+Nov 03, 2014 11:15:17 PM com.mchange.v2.c3p0.C3P0Registry banner
+INFO: Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+Nov 03, 2014 11:15:17 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4dee74f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@62789108 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx95wy9p6c9adzen|6f41a127, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@a0ceaab8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx95wy9p6c9adzen|1a04a2a, jdbcUrl -> jdbc:mysql://localhost:3306/hib_ex, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx95wy9p6c9adzen|24d4fdf1, numHelperThreads -> 3 ]
+Nov 03, 2014 11:15:18 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Nov 03, 2014 11:15:18 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+Nov 03, 2014 11:15:18 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Nov 03, 2014 11:15:18 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: hib_ex.user
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, name]
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+Nov 03, 2014 11:15:18 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+[main] INFO org.example.hibernate.util.HibernateUtil - Hibernate Initialised..
+consumer_two : 1415036718712 : Data not available, Waiting for the producer...
+[producer] INFO org.example.hibernate.util.HibernateUtil - Starting the transaction...
+[consumer_two] INFO org.example.hibernate.util.HibernateUtil - Starting the transaction...
+[consumer_one] INFO org.example.hibernate.util.HibernateUtil - Starting the transaction...
+consumer_one : 1415036718831 : Data not available, Waiting for the producer...
+[producer] INFO org.example.hibernate.util.HibernateUtil - Committing the transaction...
+producer : 1415036718919 : Notifying all consumers
+producer : 1415036718919 : dying...
+consumer_one : 1415036718919 : Data available
+consumer_one : 1415036718919 : waiting for some more time....
+consumer_two : 1415036718919 : Data available
+consumer_two : 1415036718919 : waiting for some more time....
+[producer] INFO org.example.hibernate.util.HibernateUtil - Session was closed...
+consumer_one : 1415036720919 : Enough of waiting... now going to read
+consumer_two : 1415036720920 : Enough of waiting... now going to read
+Nov 03, 2014 11:15:20 PM com.mchange.v2.c3p0.stmt.GooGooStatementCache assimilateNewCheckedOutStatement
+INFO: Multiply prepared statement! select user0_.id as id1_0_0_, user0_.name as name2_0_0_ from user user0_ where user0_.id=?
+java.lang.IllegalStateException: consumer_one : This shouldn't be happening!!
+	at org.example.hibernate.Main$2$1.run(Main.java:79)
+	at org.example.hibernate.util.HibernateUtil.executeInSession(HibernateUtil.java:60)
+	at org.example.hibernate.Main$2.run(Main.java:61)
+[consumer_one] INFO org.example.hibernate.util.HibernateUtil - Committing the transaction...
+[consumer_one] INFO org.example.hibernate.util.HibernateUtil - Session was closed...
+consumer_one : 1415036720931 : dying...
+consumer_two : 1415036720940 : SUCCESS :: Read user :User{id='user-422', name='name-user-422'} org.example.hibernate.model.User@4666d804
+consumer_two : 1415036720943 : dying...
+[consumer_two] INFO org.example.hibernate.util.HibernateUtil - Committing the transaction...
+[consumer_two] INFO org.example.hibernate.util.HibernateUtil - Session was closed...
+main : 1415036720943 : Exiting....
+
+Process finished with exit code 0
